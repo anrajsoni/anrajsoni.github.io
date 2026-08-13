@@ -90,7 +90,7 @@
 
   <div class="content-block">
     <h2>The Problem</h2>
-    <p>The Test team at Arc purchased a RTK GPS to benchmark performance against competitors by measuring precise data of location, heading, and speed. For over 4 months, no 
+    <p>The Test team at Arc purchased a RTK GPS to benchmark performance against competitors by measuring precise data of position, heading, and speed. For over 4 months, no 
     one on the team had gotten the RTK GPS to send or interpret signals. </p>
   </div>
 
@@ -98,9 +98,9 @@
     <h2>What I Did</h2>
     <p>In my first two weeks, I was able to ensure the RTK GPS could telemetrize signals and interpret data through CAN bus</p>
     <ul>
-      <li>Root caused lack of telemetry from RTK GPS asset - CAN bus was overterminated with 30 Ω, rather than 60 Ω</li>
-      <li>Navigated Stack Overflow to find correct .dbc file for GNSS systems, translating signals into data</li>
-      <li>Tested RTK GPS asset against on-board telemetry devices, collecting data using CANalyzer and Grafana.</li>
+      <li>Root caused lack of telemetry from RTK GPS asset - CAN bus was overterminated with 30 Ω, rather than 60 Ω preventing signals from telemtrizing</li>
+      <li>Navigated Stack Overflow and suppliers (i.e., Septentrio) to find correct .dbc file for GNSS systems, translating signals into human-readable data</li>
+      <li>Tested RTK GPS asset against on-board vehicle telemetry, collecting data using CANalyzer and Grafana of position, heading, and speed.</li>
     </ul>
   </div>
 
@@ -110,13 +110,13 @@
 
   <div class="outcome-box">
     <div class="k">Outcome</div>
-    <div class="v">This project allowed the Test team to use a new asset for measuring precise data related to speed, heading, and position. I developed a RTK GPS guide
+    <div class="v">This project allowed the Test team to use a new asset for measuring precise data related to position, heading, and speed. I developed a RTK GPS guide
     for future individuals at the company to use. This asset also assisted in an unrelated scope of work regarding station keeping (i.e., virtual anchor). </div>
   </div>
 
   <div class="content-block">
     <h2>What I Learned</h2>
-    <p>Gained experience in troubleshooting CAN bus systems, using data analysis software (i.e., Grafana), and developing harnesses. </p>
+    <p>Gained experience in troubleshooting CAN bus systems (i.e., correct termination), using data analysis software (i.e., Grafana), and developing harnesses. </p>
   </div>
 
   <footer>
