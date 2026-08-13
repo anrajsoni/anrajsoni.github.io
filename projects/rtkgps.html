@@ -90,30 +90,29 @@
 
   <div class="content-block">
     <h2>The Problem</h2>
-    <p>Oil-refrigerant miscibility directly affects lubrication and heat transfer performance in thermal management systems, especially compressors. Getting it wrong can mean reliability issues down the line. 
-    I supported testing to characterize this behaviour between different compressor oils and refrigerants used by Tesla under various operating conditions. Specifics of the findings are confidential under NDA.</p>
+    <p>The Test team at Arc purchased a RTK GPS to benchmark performance against competitors by measuring precise data of location, heading, and speed. For over 4 months, no 
+    one on the team had gotten the RTK GPS to send or interpret signals. </p>
   </div>
 
   <div class="content-block">
     <h2>What I Did</h2>
-    <p>Designed and ran tests to evaluate oil-refrigerant behaviour across a range of temperatures and concentrations, generating data to support engineering decisions on the system.</p>
+    <p>In my first two weeks, I was able to ensure the RTK GPS could telemetrize signals and interpret data through CAN bus</p>
     <ul>
-      <li>Built and set up test procedures including design, manufacturing, equipment, etc.</li>
-      <li>Implemented RTDs/pressure transducers and developed LabVIEW program for data collection.</li>
-      <li>Ran structured test campaigns, collecting and analyzing performance data.</li>
-      <li>Presented findings to 40+ engineers to support design decisions.</li>
+      <li>Root caused lack of telemetry from RTK GPS asset - CAN bus was overterminated with 30 Ω, rather than 60 Ω</li>
+      <li>Navigated Stack Overflow to find correct .dbc file for GNSS systems, translating signals into data</li>
+      <li>Tested RTK GPS asset against on-board telemetry devices, collecting data using CANalyzer and Grafana.</li>
     </ul>
   </div>
 
   <div class="outcome-box">
     <div class="k">Outcome</div>
-    <div class="v">Findings from this work directly informed engineering decisions on refrigerant system design, notably which combination of refrigerant and compressor oil 
-    yields miscibility within which temperature range. Specific results are confidential. </div>
+    <div class="v">This project allowed the Test team to use a new asset for measuring precise data related to speed, heading, and position. I developed a RTK GPS guide
+    for future individuals at the company to use. This asset also assisted in an unrelated scope of work regarding station keeping (i.e., virtual anchor). </div>
   </div>
 
   <div class="content-block">
     <h2>What I Learned</h2>
-    <p>Gained hands-on experience designing test methodology from scratch, instrumenting sensors for data collection and communicating data-driven findings. </p>
+    <p>Gained experience in troubleshooting CAN bus systems, using data analysis software (i.e., Grafana), and developing harnesses. </p>
   </div>
 
   <footer>
