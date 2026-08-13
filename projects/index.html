@@ -33,7 +33,7 @@
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
   .proj-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.15s ease; }
   .proj-card:hover { border-color: var(--accent); text-decoration: none; }
-  .proj-img { height: 150px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; color: var(--accent); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+  .proj-img { height: 180px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; color: var(--accent); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
   .proj-body { padding: 18px 20px; }
   .proj-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--highlight); margin-bottom: 8px; display: block; }
   .proj-title { font-weight: 600; font-size: 15.5px; margin-bottom: 6px; color: var(--text-primary); }
@@ -68,7 +68,7 @@
     <div class="projects-grid">
 
       <a class="proj-card" href="tesla.html">
-        <div class="proj-img"><img src="../images/teslalogo.jpg" alt="Tesla logo" style="width:100%; height:100%; object-fit:contain; border-radius:10px;"></div>
+        <div class="proj-img"><img src="../images/teslalogo.jpg" alt="Tesla logo" style="width:100%; height:100%; object-fit:cover; border-radius:10px;"></div>
         <div class="proj-body">
           <span class="proj-tag">Tesla</span>
           <div class="proj-title">Oil Refrigerant Miscibility Study</div>
@@ -95,7 +95,7 @@
       </a>
 
       <a class="proj-card" href="rtkgps.html">
-        <div class="proj-img"><img src="../images/rtkgpsboat.jpg" alt="RTK GPS on Arc boat" style="width:100%; height:100%; object-fit:contain; border-radius:10px;"></div>
+        <div class="proj-img"><img src="../images/rtkgpsboat.jpg" alt="RTK GPS on Arc boat" style="width:100%; height:100%; object-fit:cover; border-radius:10px;"></div>
         <div class="proj-body">
           <span class="proj-tag">Arc Boats</span>
           <div class="proj-title">RTK GPS Positioning System</div>
@@ -152,7 +152,7 @@
         <div class="proj-img">Add project photo</div>
         <div class="proj-body">
           <span class="proj-tag">ETH Zürich</span>
-          <div class="proj-title">[Robot Learning Project]</div>
+          <div class="proj-title">Robot Learning Project</div>
           <div class="proj-desc">Training and reinforcement learning of robot</div>
         </div>
       </a>
